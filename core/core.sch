@@ -1578,7 +1578,6 @@ Text Label 7750 3950 2    50   ~ 0
 I2C3_SCL
 Wire Wire Line
 	9150 4550 8900 4550
-NoConn ~ 8900 5000
 Wire Wire Line
 	9150 3650 8900 3650
 Wire Wire Line
@@ -1904,10 +1903,6 @@ Wire Notes Line
 	5100 550  3450 550 
 Text Notes 7650 1800 0    50   ~ 0
 USB
-Text Label 7750 2750 2    50   ~ 0
-SPI2_nSS2
-Wire Wire Line
-	8000 2750 7750 2750
 NoConn ~ 1350 7000
 NoConn ~ 4400 6950
 NoConn ~ 9350 1200
@@ -2152,10 +2147,6 @@ F 3 "" H 2800 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 5350 1150 5350
-Text Label 1150 5350 2    50   ~ 0
-INT_IMU
-Wire Wire Line
 	650  5650 1250 5650
 Wire Wire Line
 	2300 5750 2800 5750
@@ -2237,4 +2228,10 @@ F3 "INT" I R 9350 1200 50
 F4 "SDA" I R 9350 1300 50 
 F5 "SCL" I R 9350 1400 50 
 $EndSheet
+NoConn ~ 1250 5350
+Text Label 9150 5000 0    50   ~ 0
+SPI3_nSS2
+Wire Wire Line
+	9150 5000 8900 5000
+NoConn ~ 8000 2750
 $EndSCHEMATC

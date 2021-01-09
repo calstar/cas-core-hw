@@ -760,9 +760,9 @@ Text Label 5900 3850 0    50   ~ 0
 I2C1_SCL
 Text Label 5900 3950 0    50   ~ 0
 I2C1_SDA
-Text Label 10750 1400 0    50   ~ 0
+Text Label 10750 1450 0    50   ~ 0
 I2C3_SCL
-Text Label 10750 1300 0    50   ~ 0
+Text Label 10750 1350 0    50   ~ 0
 I2C3_SDA
 Text Label 9150 5150 0    50   ~ 0
 I2C3_SDA
@@ -1375,17 +1375,14 @@ F1 "hardware-sch-blocks/BMP388_I2C/BMP388_I2C.sch" 50
 F2 "INT" I L 4400 6950 50 
 F3 "SDA" O L 4400 7250 50 
 F4 "SCL" O R 4900 7250 50 
+F5 "CSB" I R 4900 6950 50 
 $EndSheet
 Wire Wire Line
 	4400 7250 4200 7250
 Wire Wire Line
 	4900 7250 5150 7250
-Wire Wire Line
-	10750 1400 10550 1400
 Text Label 5900 4050 0    50   ~ 0
 I2C2_SCL
-Wire Wire Line
-	10550 1300 10750 1300
 Text Label 5900 4150 0    50   ~ 0
 I2C2_SDA
 Wire Wire Line
@@ -1552,7 +1549,7 @@ Wire Wire Line
 	7750 4250 8000 4250
 Text Label 7100 1100 0    50   ~ 0
 USB_DP_I
-Text Label 9300 1100 0    50   ~ 0
+Text Label 7800 1100 2    50   ~ 0
 USB_DM
 Text Label 7750 4550 2    50   ~ 0
 USB_DP
@@ -1746,7 +1743,6 @@ Text Notes 9400 1800 0    50   ~ 0
 USB
 NoConn ~ 1350 7000
 NoConn ~ 4400 6950
-NoConn ~ 10550 1200
 Text Label 4200 7250 2    50   ~ 0
 I2C3_SDA
 Text Label 5150 7250 0    50   ~ 0
@@ -2153,7 +2149,7 @@ Wire Wire Line
 	9000 1100 8950 1100
 Wire Wire Line
 	8950 1300 9000 1300
-Text Label 7800 1100 2    50   ~ 0
+Text Label 9300 1100 0    50   ~ 0
 USB_DP
 Wire Wire Line
 	8100 1100 8150 1100
@@ -2182,9 +2178,9 @@ Text Label 7500 1600 2    50   ~ 0
 USB_VBUS
 Wire Wire Line
 	8100 800  8550 800 
-Text Label 9000 1300 0    50   ~ 0
-USB_DM_I
 Text Label 8100 1300 2    50   ~ 0
+USB_DM_I
+Text Label 9000 1300 0    50   ~ 0
 USB_DP_I
 $Comp
 L Device:D_Schottky D6
@@ -2279,4 +2275,10 @@ F 5 "RC0603FR-0720RL" H 9150 1100 50  0001 C CNN "MANF"
 	1    9150 1100
 	0    -1   -1   0   
 $EndComp
+NoConn ~ 4900 6950
+NoConn ~ 10550 1250
+Wire Wire Line
+	10750 1350 10550 1350
+Wire Wire Line
+	10550 1450 10750 1450
 $EndSCHEMATC

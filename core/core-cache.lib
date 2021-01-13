@@ -322,6 +322,26 @@ X 2 2 100 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Device_Polyfuse_Small
+#
+DEF Device_Polyfuse_Small F 0 0 N Y 1 F N
+F0 "F" -75 0 50 V V C CNN
+F1 "Device_Polyfuse_Small" 75 0 50 V V C CNN
+F2 "" 50 -200 50 H I L CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ *polyfuse*
+ *PTC*
+$ENDFPLIST
+DRAW
+S -20 50 20 -50 0 1 0 N
+P 2 0 1 0 0 100 0 -100 N
+P 4 0 1 0 -40 50 -40 30 40 -30 40 -50 N
+X ~ 1 0 100 25 D 50 50 1 1 P
+X ~ 2 0 -100 25 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R
 #
 DEF Device_R R 0 0 N Y 1 F N
@@ -457,6 +477,21 @@ X VDD 64 200 1700 100 D 50 50 1 1 W
 X NRST 7 -700 1500 100 R 50 50 1 1 I
 X PC0 8 -700 -100 100 R 50 50 1 1 B
 X PC1 9 -700 -200 100 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole
+#
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
 ENDDRAW
 ENDDEF
 #
